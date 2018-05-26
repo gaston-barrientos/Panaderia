@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="71756f09249940b0a7d3f6003ff90e58" Name="Diagram1" ZoomLevel="86" >
+        <EntityTypeShape EntityType="pan_dbModel.unidad_medida" Width="1.5" PointX="8" PointY="4.75" />
+        <EntityTypeShape EntityType="pan_dbModel.linea" Width="1.5" PointX="10.25" PointY="4.75" />
+        <EntityTypeShape EntityType="pan_dbModel.familia" Width="1.5" PointX="10.25" PointY="0.75" />
+        <EntityTypeShape EntityType="pan_dbModel.articulo" Width="1.5" PointX="8" PointY="0.75" />
+        <EntityTypeShape EntityType="pan_dbModel.costo" Width="1.5" PointX="2.5" PointY="3.875" />
+        <EntityTypeShape EntityType="pan_dbModel.precio_venta" Width="1.5" PointX="2.625" PointY="0.75" />
+        <EntityTypeShape EntityType="pan_dbModel.cabera_receta" Width="1.5" PointX="5.125" PointY="3.5" />
+        <EntityTypeShape EntityType="pan_dbModel.detalle_receta" Width="1.5" PointX="5.125" PointY="0.75" />
+        <AssociationConnector Association="pan_dbModel.familialinea" />
+        <AssociationConnector Association="pan_dbModel.productofamilia" />
+        <AssociationConnector Association="pan_dbModel.unidad_medidaproducto" />
+        <AssociationConnector Association="pan_dbModel.cabera_recetaproducto" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="pan_dbModel.cabera_recetadetalle_receta" />
+        <AssociationConnector Association="pan_dbModel.detalle_recetaarticulo" />
+        <AssociationConnector Association="pan_dbModel.costocabera_receta" />
+        <AssociationConnector Association="pan_dbModel.precio_ventacabera_receta" />
+        <EntityTypeShape EntityType="pan_dbModel.cabecera_produccion" Width="1.875" PointX="2.25" PointY="7" />
+        <EntityTypeShape EntityType="pan_dbModel.detalle_produccion" Width="1.5" PointX="5.125" PointY="7" />
+        <AssociationConnector Association="pan_dbModel.cabera_recetadetalle_produccion" />
+        <AssociationConnector Association="pan_dbModel.cabecera_producciondetalle_produccion" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
